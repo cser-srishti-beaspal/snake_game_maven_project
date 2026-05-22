@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/cser-srishti-beaspal/snake_game_maven_project.git'
+            }
+        }
+        stage('Execute') {
+            steps {
+                bat'''mvn clean package'''
+            }
+        }
+    }
+}
