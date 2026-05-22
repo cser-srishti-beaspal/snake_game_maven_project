@@ -150,6 +150,7 @@ public class App extends JPanel implements ActionListener {
     }
 
     public static void main(String[] args) {
+        System.out.println("Welcome to the Snake Game! Use arrow keys to control the snake. Eat the red food to grow and avoid colliding with yourself or the walls. Good luck!");
         JFrame frame = new JFrame("Snake Game 🐍");
         App gamePanel = new App();
 
