@@ -26,12 +26,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/cser-srishti-beaspal/snake_game_maven_project.git'
-            }
-        }
 
         stage('Build Maven Project') {
             steps {
